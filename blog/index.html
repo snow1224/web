@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+ ! Excerpted from "HTML5 and CSS3",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/bhh5 for more book information.
+-->
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="index.js"></script>
+    <title>ssw's blog</title>
+</head>
+
+<body style="">
+    <header id="page_header" style="background-color: #333;">
+        <h1 style="color:white">雪朱的部落格</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a herf="#home" class="active" onclick="homePage()">Home</a>
+                </li>
+
+                <li style="float: right;">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="dropdown" style="float: right;"><a href="#" class="dropbtn">出遊記</a>
+                    <div class="dropdown-content">
+                        <a href="#" id="komei" onclick="komeiPage()">高美濕地</a>
+                        <a href="#" id="iho" >高雄愛河</a>
+                        <a href="#" id="holi" >台中花博后里區</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="posts">
+        <article class="post">
+            <header>
+                <h2 id="title">歡迎來到我的部落格~</h2>
+                <img src="" id="img1" width="200" height="150" >
+                <img src="" id="img2" width="200" height="150">
+                <br>
+                <p id="content">
+                    這邊會不定時更新狀態和作品，有興趣可以看看。
+                </p>
+                
+                
+            </header>
+            <aside>
+                <i><b id="quote">
+                    &quot;Progress every day, even if only 5 cm.&quot;
+                    </b>
+                </i>
+            </aside>
+            
+            <footer>
+                <p id="today"> <script> getTime();</script> </p>
+            </footer>
+        </article>
+    </section>
+
+    <section id="sidebar">
+        <!--        <nav>-->
+        <h3>HomeWork</h3>
+        <ul>
+            <li><a href="../hw1/hw1.html" target="_blank">自我介紹</a></li>
+            <li><a href="../hw2/index.html" target="_blank">表單與表格</a></li>
+            <li><a href="../hw3/index.html" target="_blank">nav與css使用</a></li>
+        </ul>
+        <!--        </nav>-->
+    </section>
+
+    <footer id="page_footer">
+        <p >&copy; 2019 By julie</p>
+        <nav>
+            <ul>
+                <li><a href="about">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
+
