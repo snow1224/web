@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            $.getJSON('data.json',function(result){
+                $.each(result,function(i,field){
+                    alert(field);
+                });
+            });
+        });
+    });
+    
+</script>
+<body>
+    <table class="table">
+        <thead>
+            <th>
+               姓名 
+            </th>
+            <th>
+                地址
+            </th>
+            <th>
+                手機
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    
+        </td>
+            </tr>
+        </tbody>
+    </table>
+    <button>Get JSON DATA</button>
+    
+</body>
+</html>
